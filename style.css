@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: grid; 
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+    gap: 25px; 
+    grid-template-areas: 
+    ". img1 ."
+    ". img2 ."
+    ". img3 ."
+    ". img4 ."
+    ". img5 ."
+    ". img6 ."; 
+}
+.grid{
+    display: grid;
+}
+.b-radius{
+    border-radius: 50px;
+}
+.img1 {
+    grid-area: img1;
+    background-color: rgb(40, 58, 118);  
+}
+.img1 img{
+    align-self: end;
+    margin-left: auto;
+}
+.img2 { 
+    grid-area: img2;
+    background-color: rgb(235, 238, 245);
+}
+.img2 img{
+    align-self: start;
+    margin-left: auto;
+}
+.img3 { 
+    grid-area: img3;
+    background-color: rgb(252, 185, 132);
+}
+.img3 img{
+    align-self: end;
+    margin-left: auto;
+}
+.img4 {
+    grid-area: img4;
+    background-color: rgb(249, 226, 157); 
+}
+.img4 img{
+    align-self: end;
+    margin-left: auto;
+}
+.img5 {
+    grid-area: img5;
+    background-color: rgb(139, 183, 224);
+}
+.img5 img{
+    align-self: flex-end;
+    margin-left: auto;
+}
+.img6 {
+    grid-area: img6;
+    background-color: rgb(168, 215, 209);
+}
+.img6 img{
+    align-self: flex-end;
+    margin-left: auto;
+} 
+@media screen and (min-width:500px) {  
+    .container {
+        display: grid; 
+        grid-template-columns: 0.3fr 1fr 1fr 0.3fr; 
+        grid-template-rows: 1fr 1fr 1fr 1.1fr; 
+        gap: 20px; 
+        grid-template-areas: 
+        ". img1 img2 ."
+        ". img3 img2 ."
+        ". img3 img4 ."
+        ". img5 img6 ."; 
+    }
+    
+}
